@@ -14,7 +14,6 @@ PROMPT=$2
 if [ -z $2 ]; then
 	PROMPT="Are you sure?"
 fi
-echo $PROMPT
 zenity --question --text="$PROMPT"
 RES=$?
 
